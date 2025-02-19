@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinTrack - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FinTrack</h1>
+    <div class="notification-icon">🔔</div>
+  </header>
+
+  <main>
+    <section class="summary">
+      <h2>Ringkasan Keuangan Bulanan</h2>
+      <div class="card">
+        <p>Total Pendapatan</p>
+        <h3 id="total-income">Rp 10.000.000</h3>
+      </div>
+      <div class="card">
+        <p>Total Pengeluaran</p>
+        <h3 id="total-expense">Rp 6.000.000</h3>
+      </div>
+      <div class="card">
+        <p>Profit/Loss</p>
+        <h3 id="profit-loss">Rp 4.000.000</h3>
+      </div>
+      <div class="card">
+        <p>Margin Laba</p>
+        <div class="progress-bar">
+          <div id="margin-progress" class="progress"></div>
+        </div>
+        <h3 id="margin-percentage">40%</h3>
+      </div>
+    </section>
+
+    <section class="quick-access">
+      <h2>Akses Cepat</h2>
+      <div class="buttons">
+        <button onclick="navigateTo('margin-calculator')">Kalkulator Margin 🧮</button>
+        <button onclick="navigateTo('cash-flow')">Lacak Cash Flow 📊</button>
+        <button onclick="navigateTo('break-even')">Break-even Point ⚖️</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 FinTrack. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+// Function to navigate to other pages (for demonstration purposes)
+function navigateTo(page) {
+  alert(`Navigating to ${page}...`);
+  // You can replace this with actual routing logic later
+}
+
+// Simulate dynamic data update (e.g., from a backend API)
+document.addEventListener("DOMContentLoaded", () => {
+  const totalIncome = document.getElementById("total-income");
+  const totalExpense = document.getElementById("total-expense");
+  const profitLoss = document.getElementById("profit-loss");
+  const marginProgress = document.getElementById("margin-progress");
+  const marginPercentage = document.getElementById("margin-percentage");
+
+  // Example data
+  const income = 10000000;
+  const expense = 6000000;
+  const profit = income - expense;
+  const margin = (profit / income) * 100;
+
+  // Update UI
+  totalIncome.textContent = `Rp ${income.toLocaleString()}`;
+  totalExpense.textContent = `Rp ${expense.toLocaleString()}`;
+  profitLoss.textContent = `Rp ${profit.toLocaleString()}`;
+  marginProgress.style.width = `${margin}%`;
+  marginPercentage.textContent = `${margin.toFixed(1)}%`;
+});
